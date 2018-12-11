@@ -1,0 +1,19 @@
+<div class="front" >
+  <img class="img-responsive" src=" ../../assets/background.jpg " alt="" width="100%">
+
+  <div class="login">
+    <div class="form-group" >
+      <!-- <label for="title">Username</label> -->
+      <input type="text" id="title" [(ngModel)]="username" placeholder="Username">
+    </div>
+
+    <div class="form-group">
+      <!-- <label for="details">Password</label> -->
+      <input type="text" id="details" [(ngModel)]="password" placeholder="Password">
+    </div>
+
+    <button type="submit" class="btn btn-success" (click)="login()">Login</button>
+
+  </div>
+
+</div>

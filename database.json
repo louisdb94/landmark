@@ -1,0 +1,86 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Dec 11, 2018 at 04:01 AM
+-- Server version: 5.6.35
+-- PHP Version: 7.1.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `landmark`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `marker`
+--
+
+CREATE TABLE `marker` (
+  `id` int(11) NOT NULL,
+  `lat` varchar(50) NOT NULL,
+  `lng` varchar(50) NOT NULL,
+  `detail` longtext NOT NULL,
+  `title` varchar(30) NOT NULL,
+  `draggable` tinyint(4) NOT NULL,
+  `user` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `marker`
+--
+
+INSERT INTO `marker` (`id`, `lat`, `lng`, `detail`, `title`, `draggable`, `user`) VALUES
+(1, '80', '-90', 'bedrijf 2 test', 'woolies', 0, 'John'),
+(2, '88', '-80', 'bedrijf 3 test', 'aldi', 0, 'Doe'),
+(1, '90', '-90', 'bedrijf 1 test', 'coles', 0, 'John'),
+(0, '-33.892580279652606', '151.23098323828128', 'This is my home position', 'Home', 0, 'John'),
+(0, '-33.880221589129846', '151.27109359570318', 'This is my home position', 'Beach', 0, ''),
+(0, '-33.893901845238965', '151.27384017773443', 'This is my home position', 'Home Position', 0, 'John'),
+(0, '-33.950778668851356', '151.23522311132808', 'This is my work position', 'Work', 0, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(1, 'John', 'John'),
+(2, 'Doe', 'Doe'),
+(3, 'Test', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;

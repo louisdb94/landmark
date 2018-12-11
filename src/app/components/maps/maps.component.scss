@@ -1,0 +1,47 @@
+.map{
+  width: 75%;
+  float: left;
+  height: 300px;
+}
+
+agm-map {
+    height: 300px;
+}
+
+.search {
+text-align: center;
+width: 22%;
+float: left;
+font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .search {
+  text-align: center;
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  }
+
+  .map{
+    width: 100%;
+    float: left;
+    height: 300px;
+
+  }
+}
+
+.searchbox {
+}
+
+#search {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  padding: 5%;
+}
+
+#searchValue {
+  font-size: 12px;
+  width: 50%;
+}
