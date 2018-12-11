@@ -15,6 +15,8 @@ npm run dev
 create database 'landmark' in localhost
 attached dummy database to project -> see database.json
 
+copy your google maps api key in index.html! 
+
 #Login
 user1: John, password: John
 user2: Doe,  password: Doe
