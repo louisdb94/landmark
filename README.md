@@ -17,9 +17,9 @@ attached dummy database to project -> see database.json
 
 copy your google maps api key in index.html! 
 
-#Login
+# Login
 user1: John, password: John
 user2: Doe,  password: Doe
 
-#implementation
+# implementation
 worked about 7 hours on this project
